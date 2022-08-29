@@ -29,8 +29,7 @@ const loadDetails = (code) => {
 
 const countryDetails = country => {
     const countryDetail = document.getElementById('country-detail');
-    const countryInfo = document.createElement('div');
-    countryInfo.innerHTML = `
+    countryDetail.innerHTML = `
     <div class="card w-96 bg-base-100 shadow-xl m-auto">
      <h2 class="text-center text-3xl text-bold">Country Details : </h2>
                     <figure class="px-10 pt-10">
@@ -46,7 +45,7 @@ const countryDetails = country => {
                     </div>
                 </div> 
     `
-    countryDetail.appendChild(countryInfo);
+
 
 
 }
